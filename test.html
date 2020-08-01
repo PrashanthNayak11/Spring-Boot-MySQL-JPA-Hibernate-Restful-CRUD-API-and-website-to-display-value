@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ghibli App</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<form name="myform">
+    <input type="text" name="id">
+    <input type="button" onclick="f1()" name="test">
+</form>
+  <div id="root">
+    <div class="container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- <html>
+    <table>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+    <script>
+        
+        fetch("http://localhost:8080/api/notes").then(
+            res=>{
+                res.json().then(
+                    data=>{
+                        console.log(data);
+                        if(data.length>0)
+                        {
+                            var temp="";
+                            data.forEach((u)=>{
+                                temp+="<tr>";
+                                temp+="<td>"+u.id+"</td>";
+                                temp+="<td>"+u.content+"</td>";
+                                temp+="<td>"+u.title+"</td>";
+                                temp+="<td>"+u.createdAt+"</td>";
+                                temp+="<td>"+u.updatedAt+"</td>";
+                                temp+="</tr>"
+
+
+                            }
+                            )
+                        document.getElementById("data").innerHTML=temp;
+                        }
+                    }
+                )
+            }
+        )
+    </script>
+</html> -->
